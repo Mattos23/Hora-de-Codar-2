@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior de 3</title>
+</head>
+<body>
+    <script>
+        var numero1 = prompt("Digite um número ");
+        var numero2 = prompt("Digite um segundo número ");
+        var numero3 = prompt("Digite um terceiro número ")
+
+        numero1 = parseFloat(numero1);
+        numero2 = parseFloat(numero2);
+        numero3 = parseFloat(numero3);
+
+    var maior_numero;
+
+    if(numero1 > numero2 && numero1 > numero3) {
+      maior_numero = numero1;
+    } else if (numero2 > numero1 && numero2 > numero3) {
+      maior_numero = numero2;
+    } else {
+      maior_numero = numero3;
+    }
+
+    var segundo_maior;
+
+    if (maior_numero === numero1) {
+      if (numero2 > numero3) {
+        segundo_maior = numero2;
+      } else  {
+        segundo_maior = numero3;
+      }
+    } else if (maior_numero === numero2) {
+      if (numero1 > numero3) {
+        segundo_maior = numero1;
+      } else {
+        segundo_maior = numero3
+      }
+    } else {
+      if (numero1 > numero2) {
+        segundo_maior = numero1;
+      } else {
+        segundo_maior = numero2;
+      }
+    }
+
+    var soma = maior_numero + segundo_maior;
+
+    alert( "A soma dos 2 maiores é: " + soma);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <script>
+        var valor = prompt("Escreva um valor:");
+        var valor_2 = prompt("Escreva um segundo valor:");
+        var soma = prompt ("Escola uma destas operações: 1. Adição; 2. Subtração; 3. Divisão; 4. Multiplicação");
+        var resultado = 0;
+
+        valor = parseFloat(valor);
+        valor_2 = parseFloat(valor_2);
+        resultado = parseFloat(resultado);
+
+        if ( valor > 4){
+            alert("Tente novamente com números entre 1 á 4");
+        } else if (valor_2 > 4) {
+            alert("Tente novamente com números entre 1 á 4");
+        } else if (soma == 1){
+            resultado = valor + valor_2;
+        } else if (soma == 2 ){
+            resultado = valor - valor_2;
+        } else if (soma == 3){
+            resultado = valor / valor_2;
+        } else {
+            resultado = valor * valor_2;
+        }
+ 
+        document.write( " O resultado é " + resultado);
+
+
+    </script>
+</body>
+</html>
